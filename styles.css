@@ -1,0 +1,79 @@
+html {
+    background-color: burlywood;
+}
+
+#heading {
+    text-align: center;
+    color: green;
+    font-size: 50pt;
+}
+
+#input-boxes {
+    border-style: dotted;
+    padding: 10px; 
+    text-align: center;
+}
+
+#amount-due  {
+    height: 50px;
+    width: 40%;
+    font-size: 20pt;
+    float: left;
+}
+
+#amount-received {
+    height: 50px;
+    width: 40%;
+    font-size: 20pt;
+    float: middle;
+}
+
+#calculate-change {
+    background-color: green;
+    font-size: 20pt;
+    border-radius: 20px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#dollars-background {
+    border-style: dotted;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#dollars-background p {
+    display: inline;
+    margin: 20px; 
+    font-weight: bold;
+    font-size: 50pt;
+    color: green;
+}
+
+#cents-background {
+    border-style: dotted;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#cents-background p {
+    display: inline;
+    font-size: 50pt;
+    font-weight: bold;
+    margin: 20px;
+    color: green;
+}
+
+#money-image {
+    width: 150px;
+    height: 75px;
+}
+
+#cents-image {
+    width: 75px;
+    height: 75px;
+}
