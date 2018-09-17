@@ -11,42 +11,42 @@ function changeCalculation() {
         var dollarChange = Math.floor(totalChange)
         if(dollarChange > 19) {
             var twenties = Math.floor(dollarChange / 20);
-            document.getElementById('twenties-output').append(twenties);
+            document.getElementById('twenties-output').innerHTML = twenties;
             dollarChange -= (twenties * 20);
         } else {
             twenties = 0;
-            document.getElementById('twenties-output').append(twenties);
+            document.getElementById('twenties-output').innerHTML = twenties;
         };
-        if( (dollarChange % 10) > 0) {
+        if( (dollarChange % 10) >= 0) {
             var tens = Math.floor(dollarChange / 10);
-            document.getElementById('tens-output').append(tens);
+            document.getElementById('tens-output').innerHTML = (tens);
             dollarChange -= (tens * 10);
         } else {
             tens = 0;
-            document.getElementById('tens-output').append(tens);
+            document.getElementById('tens-output').innerHTML = (tens);
         };
-        if( (dollarChange % 5) > 0) {
+        if( (dollarChange % 5) >= 0) {
             var fives = Math.floor(dollarChange / 5);
-            document.getElementById('fives-output').append(fives);
+            document.getElementById('fives-output').innerHTML = (fives);
             dollarChange -= (fives * 5);
         } else {
             fives = 0;
-            document.getElementById('fives-output').append(fives);
+            document.getElementById('fives-output').innerHTML = (fives);
         };
         if( (dollarChange % 2) >= 0) {
             var twos = Math.floor(dollarChange / 2);
-            document.getElementById('twos-output').append(twos);
+            document.getElementById('twos-output').innerHTML = (twos);
             dollarChange -= (twos * 2);
         } else {
             twos = 0;
-            document.getElementById('twos-output').append(twos);
+            document.getElementById('twos-output').innerHTML = (twos);
         };
         if(dollarChange > 0) {
             var ones = Math.floor(dollarChange / 1);
-            document.getElementById('ones-output').append(ones);
+            document.getElementById('ones-output').innerHTML = (ones);
         } else {
             ones = 0;
-            document.getElementById('ones-output').append(ones);
+            document.getElementById('ones-output').innerHTML = (ones);
         };
     }
     // function to get the cents value
@@ -64,34 +64,34 @@ function changeCalculation() {
     function getCoins() {
         if( decimalValue > 24) {
             var quarters = Math.floor(decimalValue / 25);
-            document.getElementById('quarters-output').append(quarters);
+            document.getElementById('quarters-output').innerHTML = (quarters);
             decimalValue -= (quarters * 25);
         } else {
             quarters = 0;
-            document.getElementById('quarters-output').append(quarters)
+            document.getElementById('quarters-output').innerHTML = (quarters)
         }; 
-        if( (decimalValue % 10) > 0) {
+        if( (decimalValue % 10) >= 0) {
             var dimes = Math.floor(decimalValue / 10) ;
-            document.getElementById('dimes-output').append(dimes);
+            document.getElementById('dimes-output').innerHTML = (dimes);
             decimalValue -= (dimes * 10);
         } else {
             dimes = 0;
-            document.getElementById('dimes-output').append(dimes);
+            document.getElementById('dimes-output').innerHTML = (dimes);
         }; 
-        if( (decimalValue % 5) > 0) {
+        if( (decimalValue % 5) >= 0) {
             var nickels = Math.floor(decimalValue / 5);
-            document.getElementById('nickels-output').append(nickels);
+            document.getElementById('nickels-output').innerHTML = (nickels);
             decimalValue -= (nickels * 5);
         } else {
             nickels = 0;
-            document.getElementById('nickels-output').append(nickels);
+            document.getElementById('nickels-output').innerHTML = (nickels);
         };
-        if( (decimalValue % 5 ) > 0) {
+        if( (decimalValue % 5 ) >= 0) {
             var pennies = Math.ceil(decimalValue / 1);
-            document.getElementById('pennies-output').append(pennies);
+            document.getElementById('pennies-output').innerHTML = (pennies);
         } else {
             pennies = 0;
-            document.getElementById('pennies-output').append(pennies);
+            document.getElementById('pennies-output').innerHTML = (pennies);
         };
     };
 };
